@@ -17,10 +17,14 @@ export const getCompoundFixture = (ownerAddress: Address) => new CompoundFixture
 export const getUniswapFixture = (ownerAddress: Address) => new UniswapFixture(provider, ownerAddress);
 export const getYearnFixture = (ownerAddress: Address) => new YearnFixture(provider, ownerAddress);
 
+export { ForkedTokens } from "./types";
+
 export {
   getAccounts,
   getEthBalance,
   getRandomAccount,
+  getForkedTokens,
+  initializeForkedTokens,
 } from "./accountUtils";
 export {
   addSnapshotBeforeRestoreAfterEach,
